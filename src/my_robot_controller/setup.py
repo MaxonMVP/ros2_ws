@@ -12,7 +12,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
-        ('share/' + package_name + '/maps', glob('maps/*')),
+        ('share/' + package_name + '/map', glob('map/*')),
         ('share/' + package_name + '/worlds', glob('worlds/*'))
     ],
     install_requires=['setuptools'],
