@@ -19,7 +19,7 @@ def generate_launch_description():
         'map',
         'map.yaml'
     )
-    gazebo_world = IncludeLaunchDescription(
+    world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
                 os.path.join(pkg_turtlebot3_gazebo, 'launch', 'turtlebot3_world.launch.py')
         )
@@ -46,7 +46,7 @@ def generate_launch_description():
    
     ld = LaunchDescription()
     ld.add_action(navigation_node)
-    ld.add_action(gazebo_world)
+    ld.add_action(world)
     #ld.add_action(goal_pose_publisher)
 
 
