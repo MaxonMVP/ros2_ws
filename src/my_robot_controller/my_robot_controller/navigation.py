@@ -14,10 +14,10 @@ class TurtleNavigationNode(Node):
         self.get_logger().info("Navigation Node started")
 
         self.goal_poses = [  # Define goal positions and orientations
-            {'x': -3.054, 'y': 0.454, 'yaw': 10},
-            {'x': 1, 'y': 1.5, 'yaw': 45},
-            {'x': 1.1, 'y': 5.45, 'yaw': 144.25},
-            {'x': -7.15, 'y': 2.55, 'yaw': 8}
+            {'x': 0, 'y': 0, 'yaw': -30},
+            {'x': 1.72, 'y': 0.68, 'yaw': 60},
+            {'x': -0.38, 'y': 1.87, 'yaw': 0},
+            {'x': -0.52, 'y': -0.35, 'yaw': 90}
         ]
 
         self.current_goal_index = 0
