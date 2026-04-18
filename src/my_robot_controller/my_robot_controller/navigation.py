@@ -14,10 +14,11 @@ class TurtleNavigationNode(Node):
         self.get_logger().info("Navigation Node started")
 
         self.goal_poses = [  # Define goal positions and orientations
-            {'x': 0, 'y': 0, 'yaw': -30},
-            {'x': 1.72, 'y': 0.68, 'yaw': 60},
-            {'x': -0.38, 'y': 1.87, 'yaw': 0},
-            {'x': -0.52, 'y': -0.35, 'yaw': 90}
+            {'x': 3, 'y': 0.3, 'yaw': 60},
+            {'x': 0.15, 'y': 5, 'yaw': 10},
+            {'x': -3, 'y': 1.7, 'yaw': 60},
+            {'x': -1.96, 'y': -4, 'yaw': 45}
+
         ]
 
         self.current_goal_index = 0
@@ -41,8 +42,8 @@ class TurtleNavigationNode(Node):
     def publish_initial_pose(self):
         initial_pose = PoseWithCovarianceStamped()
         initial_pose.header.frame_id = 'map'
-        initial_pose.pose.pose.position.x = -2.0
-        initial_pose.pose.pose.position.y = -0.5
+        initial_pose.pose.pose.position.x = 0.0001
+        initial_pose.pose.pose.position.y = 0.0001
 
         quaternion = tf_transformations.quaternion_from_euler(0, 0, 0)
         initial_pose.pose.pose.orientation.x = quaternion[0]
