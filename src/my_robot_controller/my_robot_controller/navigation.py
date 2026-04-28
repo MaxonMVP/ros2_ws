@@ -18,7 +18,7 @@ class TurtleNavigationNode(Node):
             {'x': 2.93, 'y': 0.3, 'yaw': 80},
             {'x': 0.163, 'y': 5.122, 'yaw': 140},
             {'x': -2.93, 'y': 1.7, 'yaw': 60},
-            {'x': -1.96, 'y': -4, 'yaw': 45}
+
         ]
 
         self.current_goal_index = 0
