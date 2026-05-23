@@ -1,6 +1,119 @@
 <?xml version="1.0"?>
-<testsuites name="/ros2_ws/autoware_map/scenario_test_runner" failures="0" errors="0" tests="1">
-  <testsuite name="scenario_MP" failures="0" errors="0" tests="1">
-    <testcase name="scenario_MP" />
+<testsuites name="/autoware_map/scenario_test_runner" failures="1" errors="2" tests="108">
+  <testsuite name="scenario_MP4" failures="1" errors="2" tests="108">
+    <testcase name="scenario_MP4_107" />
+    <testcase name="scenario_MP4_106" />
+    <testcase name="scenario_MP4_99" />
+    <testcase name="scenario_MP4_95" />
+    <testcase name="scenario_MP4_94" />
+    <testcase name="scenario_MP4_93" />
+    <testcase name="scenario_MP4_102" />
+    <testcase name="scenario_MP4_91" />
+    <testcase name="scenario_MP4_88" />
+    <testcase name="scenario_MP4_92" />
+    <testcase name="scenario_MP4_84" />
+    <testcase name="scenario_MP4_83" />
+    <testcase name="scenario_MP4_82" />
+    <testcase name="scenario_MP4_80" />
+    <testcase name="scenario_MP4_79" />
+    <testcase name="scenario_MP4_78" />
+    <testcase name="scenario_MP4_103" />
+    <testcase name="scenario_MP4_76" />
+    <testcase name="scenario_MP4_85" />
+    <testcase name="scenario_MP4_74" />
+    <testcase name="scenario_MP4_73" />
+    <testcase name="scenario_MP4_66" />
+    <testcase name="scenario_MP4_65" />
+    <testcase name="scenario_MP4_63" />
+    <testcase name="scenario_MP4_61" />
+    <testcase name="scenario_MP4_60" />
+    <testcase name="scenario_MP4_59" />
+    <testcase name="scenario_MP4_24" />
+    <testcase name="scenario_MP4_70" />
+    <testcase name="scenario_MP4_62" />
+    <testcase name="scenario_MP4_48">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForEngage, but time is up. The current Autoware state is PLANNING." />
+    </testcase>
+    <testcase name="scenario_MP4_104" />
+    <testcase name="scenario_MP4_57" />
+    <testcase name="scenario_MP4_23" />
+    <testcase name="scenario_MP4_12" />
+    <testcase name="scenario_MP4_7" />
+    <testcase name="scenario_MP4_21">
+      <error type="AutowareError" message="Simulator waited for the Autoware state to transition to WaitingForEngage, but time is up. The current Autoware state is PLANNING." />
+    </testcase>
+    <testcase name="scenario_MP4_72" />
+    <testcase name="scenario_MP4_67" />
+    <testcase name="scenario_MP4_18" />
+    <testcase name="scenario_MP4_9" />
+    <testcase name="scenario_MP4_49" />
+    <testcase name="scenario_MP4_17" />
+    <testcase name="scenario_MP4_81" />
+    <testcase name="scenario_MP4_31" />
+    <testcase name="scenario_MP4_53" />
+    <testcase name="scenario_MP4_20" />
+    <testcase name="scenario_MP4_28" />
+    <testcase name="scenario_MP4_42" />
+    <testcase name="scenario_MP4_71" />
+    <testcase name="scenario_MP4_16" />
+    <testcase name="scenario_MP4_105" />
+    <testcase name="scenario_MP4_22" />
+    <testcase name="scenario_MP4_6" />
+    <testcase name="scenario_MP4_87" />
+    <testcase name="scenario_MP4_58" />
+    <testcase name="scenario_MP4_46" />
+    <testcase name="scenario_MP4_97" />
+    <testcase name="scenario_MP4_26" />
+    <testcase name="scenario_MP4_45" />
+    <testcase name="scenario_MP4_54" />
+    <testcase name="scenario_MP4_69" />
+    <testcase name="scenario_MP4_14" />
+    <testcase name="scenario_MP4_13" />
+    <testcase name="scenario_MP4_75" />
+    <testcase name="scenario_MP4_35" />
+    <testcase name="scenario_MP4_1" />
+    <testcase name="scenario_MP4_41" />
+    <testcase name="scenario_MP4_2" />
+    <testcase name="scenario_MP4_90" />
+    <testcase name="scenario_MP4_27" />
+    <testcase name="scenario_MP4_96" />
+    <testcase name="scenario_MP4_25" />
+    <testcase name="scenario_MP4_64" />
+    <testcase name="scenario_MP4_3" />
+    <testcase name="scenario_MP4_52" />
+    <testcase name="scenario_MP4_4" />
+    <testcase name="scenario_MP4_89" />
+    <testcase name="scenario_MP4_5" />
+    <testcase name="scenario_MP4_8" />
+    <testcase name="scenario_MP4_77" />
+    <testcase name="scenario_MP4_11" />
+    <testcase name="scenario_MP4_10" />
+    <testcase name="scenario_MP4_98" />
+    <testcase name="scenario_MP4_29" />
+    <testcase name="scenario_MP4_32" />
+    <testcase name="scenario_MP4_68" />
+    <testcase name="scenario_MP4_36" />
+    <testcase name="scenario_MP4_33" />
+    <testcase name="scenario_MP4_0" />
+    <testcase name="scenario_MP4_34" />
+    <testcase name="scenario_MP4_47" />
+    <testcase name="scenario_MP4_86" />
+    <testcase name="scenario_MP4_37" />
+    <testcase name="scenario_MP4_15" />
+    <testcase name="scenario_MP4_38" />
+    <testcase name="scenario_MP4_101" />
+    <testcase name="scenario_MP4_39" />
+    <testcase name="scenario_MP4_40" />
+    <testcase name="scenario_MP4_51" />
+    <testcase name="scenario_MP4_19" />
+    <testcase name="scenario_MP4_43" />
+    <testcase name="scenario_MP4_44">
+      <failure type="SimulationFailure" message="CustomCommandAction typed &quot;exitFailure&quot; was triggered by the anonymous Condition (OpenSCENARIO.Storyboard.Story[0].Act[&quot;_EndCondition&quot;].ManeuverGroup[0].Maneuver[0].Event[1].StartTrigger.ConditionGroup[1].Condition[0]): Is any of [ego]'s standstill time = [60.166666666666351659387146355584] greaterThan 60.000000000000000000000000000000?" />
+    </testcase>
+    <testcase name="scenario_MP4_50" />
+    <testcase name="scenario_MP4_100" />
+    <testcase name="scenario_MP4_55" />
+    <testcase name="scenario_MP4_30" />
+    <testcase name="scenario_MP4_56" />
   </testsuite>
 </testsuites>
